@@ -1,0 +1,6 @@
+<h1>Login here</h1>
+	<%= form_for @user, url: "/login", method: "post" do |a| %>
+		<%= a.text_field :email, placeholder: "Email" %><br>
+		<%= a.password_field :password, placeholder: "Password" %><br>
+		<%= a.submit "Login" %><br>
+<% end %>

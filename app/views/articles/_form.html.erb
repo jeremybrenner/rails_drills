@@ -1,0 +1,5 @@
+<%= form_for @article do |a| %>
+	<%= a.text_field :title, placeholder: "Title" %><br>
+	<%= a.text_area :content, rows: 15, placeholder: "Enter Content Here" %><br>
+	<%= a.submit "Make a post" %><br>
+<% end %>

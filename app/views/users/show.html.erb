@@ -1,0 +1,14 @@
+<h1>Welcome to your blog, <%= @user.first_name %></h1>
+
+
+<% @articles.reverse.each do |a| %>
+	<br>
+	<div><%= link_to "#{a.title}", article_path(a.id) %></div>
+	<br>
+	<div><%= a.content %> 
+	<br>
+<% end %>
+
+
+<%= link_to "Make a new post", new_article_path %><br>
+<%= link_to "Logout", "/logout" %>

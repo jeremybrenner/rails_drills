@@ -1,0 +1,10 @@
+<h1>This is post number<%= @article.id %></h1>
+<div>Title: <%= @article.title %>
+<div>Content: <%= @article.content %>
+<br>
+<br>
+<div>
+<%= link_to "Edit this post", edit_article_path %>
+<%= link_to "Delete this post", article_path, method: "delete" %>
+<%= link_to "My Profile", user_path(current_user.id) %>
+</div>
